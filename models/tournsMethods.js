@@ -32,9 +32,11 @@ exports.addOne = (
   buyin1,
   perDollar1,
   country1,
-  state1,
+  region1,
   area1,
-  city1
+  city1,
+  occurrence1,
+  startTime1
 ) => {
   return Tourns.create(
     {
@@ -47,9 +49,11 @@ exports.addOne = (
       buyin: buyin1,
       perDollar: perDollar1,
       country: country1,
-      state: state1,
+      region: region1,
       area: area1,
       city: city1,
+      occurrence: occurrence1,
+      startTime: startTime1,
     },
     (err, result) => {
       if (err) throw err;

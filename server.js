@@ -8,6 +8,8 @@ app.use(cors());
 const port = process.env.PORT || 5000;
 var tournsMethods = require("./models/tournsMethods");
 var Tourns = require("./models/tourns");
+var casinoMethods = require("./models/casinoMethods");
+var Casinos = require("./models/casinos");
 const bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -69,9 +71,11 @@ app.post("/api/add", (req, res, next) => {
       buyin: req.body.buyin,
       perDollar: req.body.perDollar,
       country: req.body.country,
-      state: req.body.state,
+      region: req.body.region,
       area: req.body.area,
       city: req.body.city,
+      occurrence: req.body.occurrence,
+      startTime: req.body.startTime,
     });
 
     tourn.save((err, newTourn) => {
@@ -91,9 +95,11 @@ app.post("/api/add", (req, res, next) => {
         buyin: req.body.buyin,
         perDollar: req.body.perDollar,
         country: req.body.country,
-        state: req.body.state,
+        region: req.body.region,
         area: req.body.area,
         city: req.body.city,
+        occurrence: req.body.occurrence,
+        startTime: req.body.startTime,
       },
       (err, result) => {
         if (err) return next(err);

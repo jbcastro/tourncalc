@@ -18,9 +18,11 @@ var mySchema = mongoose.Schema(
     buyin: { type: Number },
     perDollar: { type: Number },
     country: { type: String },
-    state: { type: String },
+    region: { type: String },
     area: { type: String },
     city: { type: String },
+    occurrence: { type: String },
+    startTime: { type: String },
   },
   {
     versionKey: false,
