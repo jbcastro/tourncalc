@@ -23,37 +23,47 @@ exports.getOne = (tourns1) => {
 };
 
 exports.addOne = (
-  casino1,
   name1,
-  starting1,
-  roundLength1,
-  resultLength1,
-  score1,
-  buyin1,
-  perDollar1,
+  casino1,
   country1,
   region1,
   area1,
   city1,
-  occurrence1,
-  startTime1
+  starting1,
+  roundLength1,
+  score1,
+  buyIn1,
+  allBlinds1,
+  resultLength1,
+  perDollar1,
+  level1,
+  notes1,
+  occurance1
+  
+  
+  
+  
 ) => {
   return Tourns.create(
     {
-      casino: casino1,
       name: name1,
-      starting: starting1,
-      roundLength: roundLength1,
-      resultLength: resultLength1,
-      score: score1,
-      buyin: buyin1,
-      perDollar: perDollar1,
+      casino: casino1,
       country: country1,
       region: region1,
       area: area1,
       city: city1,
-      occurrence: occurrence1,
-      startTime: startTime1,
+      starting: starting1,
+      roundLength: roundLength1,
+      
+      score: score1,
+      buyIn: buyIn1,
+      allBlinds:allBlinds1,
+      resultLength:resultLength1,
+      perDollar: perDollar1,
+      level:level1,
+      notes:notes1,
+      occurance:occurance1
+      
     },
     (err, result) => {
       if (err) throw err;

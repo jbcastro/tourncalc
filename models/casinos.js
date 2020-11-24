@@ -17,10 +17,11 @@ var mySchema = mongoose.Schema(
     address: { type: String, required: true },
     zip: { type: Number, required: true },
     phone: { type: String, required: true },
+    website: { type: String, required: true },
   },
   {
     versionKey: false,
   }
 );
 
-module.exports = mongoose.model("Casinos", mySchema);
+module.exports = mongoose.model("casinos", mySchema);

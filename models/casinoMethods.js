@@ -30,7 +30,8 @@ exports.addOne = (
   city1,
   address1,
   zip1,
-  phone1
+  phone1,
+  website1
 ) => {
   return Casinos.create(
     {
@@ -42,6 +43,7 @@ exports.addOne = (
       address: address1,
       zip: zip1,
       phone: phone1,
+      website: website1,
     },
     (err, result) => {
       if (err) throw err;

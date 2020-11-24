@@ -21,4 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-models/connection.js
+# models/connection.js
+package-lock.json
+# Local Netlify folder
+.netlify
+
+connection.js

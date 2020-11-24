@@ -1,8 +1,8 @@
 {
-  "name": "tournament-calculator-react",
+  "name": "addcasino",
   "version": "0.1.0",
   "engines": {
-    "node": "12.13.0"
+    "node": "12.x"
   },
   "private": true,
   "dependencies": {
@@ -26,14 +26,11 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "server": "node server.js",
-    "client": "node scripts/start-client.js",
-    "build": "node scripts/build.js",
-    "seed": "node scripts/seedDB.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "installDeps": "yarn && cd client && yarn",
+    "start": "node server.js",
     "dev": "concurrently \"nodemon server.js\" \"cd client && npm start\"",
-    "heroku-postbuild": "cd client && yarn && yarn run build"
+ 
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "proxy": "http://localhost:5000/",
   "eslintConfig": {

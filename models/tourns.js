@@ -11,22 +11,28 @@ var mySchema = mongoose.Schema(
   {
     name: { type: String },
     casino: { type: String },
-    starting: { type: Number },
-    roundLength: { type: Number },
-    resultLength: { type: Number },
-    score: { type: String },
-    buyin: { type: Number },
-    perDollar: { type: Number },
-    country: { type: String },
-    region: { type: String },
+    country:{type:String},
+    region:{type:String},
     area: { type: String },
     city: { type: String },
-    occurrence: { type: String },
-    startTime: { type: String },
+    starting: { type: Number },
+    roundLength: { type: Number },
+    score:{type:Number},
+    perDollar:{type:Number},
+    buyIn: { type: Number },
+    allBlinds:{type:Object},
+    resultLength: { type: Number },
+    perDollar: { type: Number },
+    level:{type:Number},
+    notes:{type:String},
+    occurance:{type:String}
+  
+    
+    
   },
   {
     versionKey: false,
   }
 );
 
-module.exports = mongoose.model("Tourns", mySchema);
+module.exports = mongoose.model("tourns", mySchema);
