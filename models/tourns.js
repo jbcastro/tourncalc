@@ -25,7 +25,8 @@ var mySchema = mongoose.Schema(
     perDollar: { type: Number },
     level:{type:Number},
     notes:{type:String},
-    occurance:{type:String}
+    occurance:{String},
+    startTime:{type:String}
   
     
     

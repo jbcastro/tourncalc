@@ -38,7 +38,8 @@ exports.addOne = (
   perDollar1,
   level1,
   notes1,
-  occurance1
+  occurance1,
+  startTime1
   
   
   
@@ -62,7 +63,8 @@ exports.addOne = (
       perDollar: perDollar1,
       level:level1,
       notes:notes1,
-      occurance:occurance1
+      occurance:occurance1,
+      startTime:startTime1
       
     },
     (err, result) => {

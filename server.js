@@ -76,7 +76,8 @@ app.post("/api/add/", (req, res, next) => {
      perDollar:req.body.perDollar,
      level:req.body.level,
      notes:req.body.notes,
-     occurance:req.body.occurance
+     occurance:req.body.occurance,
+     startTime:req.body.startTime
     });
 
     casino.save((err, newCasino) => {
@@ -102,7 +103,8 @@ app.post("/api/add/", (req, res, next) => {
      perDollar:req.body.perDollar,
      level:req.body.level,
      notes:req.body.notes,
-     occurance:req.body.occurance
+     occurance:req.body.occurance,
+     startTime:req.body.startTime
       },
       (err, result) => {
         if (err) return next(err);
